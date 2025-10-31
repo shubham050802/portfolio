@@ -33,9 +33,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">SK</span>
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="Shubham Kumar Logo" 
+              className="w-10 h-10 rounded-lg object-contain"
+            />
             <span className="text-xl font-display font-bold text-white hidden sm:block">
               Shubham Kumar
             </span>

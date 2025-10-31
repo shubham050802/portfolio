@@ -85,7 +85,7 @@ const Home = () => {
                   Get in Touch
                 </Link>
                 <a
-                  href="#"
+                  href="/resume.pdf"
                   className="px-8 py-3 bg-secondary hover:bg-secondary/80 text-white rounded-lg font-semibold flex items-center space-x-2 transition-all transform hover:scale-105"
                 >
                   <FaDownload />
@@ -131,7 +131,7 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent rounded-full opacity-20 blur-2xl"></div>
                 <div className="relative w-full h-full bg-dark-card rounded-full border-4 border-primary/30 flex items-center justify-center overflow-hidden">
                   <img
-                    src="https://via.placeholder.com/400x400/1e293b/0ea5e9?text=SK"
+                    src="/profile.jpeg"
                     alt="Shubham Kumar"
                     className="w-full h-full object-cover"
                   />
@@ -193,24 +193,38 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="bg-dark-card border border-dark-lighter rounded-xl p-6 hover:border-primary transition-all transform hover:scale-105"
+                className="bg-dark-card border border-dark-lighter rounded-xl overflow-hidden hover:border-primary transition-all transform hover:scale-105"
               >
-                <div className="mb-4">
-                  <span className="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full">
-                    {project.category}
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                <p className="text-gray-400 text-sm mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.slice(0, 3).map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 py-1 bg-dark-lighter text-xs rounded"
-                    >
-                      {tech}
+                {/* Project Image */}
+                {project.image && (
+                  <div className="relative h-48 overflow-hidden bg-dark-lighter">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-dark-card to-transparent opacity-60"></div>
+                  </div>
+                )}
+                
+                <div className="p-6">
+                  <div className="mb-4">
+                    <span className="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full">
+                      {project.category}
                     </span>
-                  ))}
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                  <p className="text-gray-400 text-sm mb-4">{project.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.slice(0, 3).map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2 py-1 bg-dark-lighter text-xs rounded"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
             ))}
