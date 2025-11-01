@@ -33,7 +33,7 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-2xl opacity-20 blur-2xl"></div>
                 <div className="relative w-full h-full bg-dark-card rounded-2xl border-2 border-primary/30 overflow-hidden">
                   <img
-                    src="https://via.placeholder.com/500x500/1e293b/0ea5e9?text=Shubham+Kumar"
+                    src="/profile.jpeg"
                     alt="Shubham Kumar"
                     className="w-full h-full object-cover"
                   />

@@ -74,6 +74,18 @@ const Projects = () => {
                 transition={{ delay: index * 0.1 }}
                 className="bg-dark-card border border-dark-lighter rounded-xl overflow-hidden hover:border-primary transition-all group"
               >
+                {/* Project Image */}
+                {project.image && (
+                  <div className="relative h-48 overflow-hidden bg-dark-lighter">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-dark-card to-transparent opacity-60"></div>
+                  </div>
+                )}
+                
                 {/* Project Header */}
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-4">

@@ -59,71 +59,8 @@ export const experience = [
 export const projects = [
   {
     id: 1,
-    title: "Spam Email Classification using Naive Bayes",
-    category: "Machine Learning",
-    technologies: ["Python", "NumPy", "Pandas", "SciPy", "Scikit-learn"],
-    description: "Developed and evaluated probabilistic models for classifying emails as spam or not spam, leveraging scikit-learn.",
-    achievements: [
-      "Implemented both GaussianNB and BernoulliNB classifiers",
-      "Achieved test accuracy of 87.2% with GaussianNB and 94.8% with BernoulliNB on 1000 test emails",
-      "Demonstrated practical application of ML for core NLP task"
-    ],
-    links: {
-      github: "https://github.com/shubham050802/data_science"
-    },
-    featured: true
-  },
-  {
-    id: 2,
-    title: "Wine Cultivator Classification using Neural Networks",
-    category: "Machine Learning",
-    technologies: ["Python", "NumPy", "Pandas", "Scikit-learn"],
-    description: "Built and trained a Multi-layer Perceptron neural network to classify wine cultivators from physicochemical features.",
-    achievements: [
-      "Engineered complete ML pipeline with data splitting, feature scaling, model training, and evaluation",
-      "Achieved perfect 100% accuracy on unseen test set",
-      "Zero misclassifications validated with confusion matrix"
-    ],
-    links: {
-      github: "https://github.com/shubham050802/data_science"
-    },
-    featured: true
-  },
-  {
-    id: 3,
-    title: "Wine Quality Prediction",
-    category: "Machine Learning",
-    technologies: ["Python", "NumPy", "Pandas", "Matplotlib", "Scikit-learn"],
-    description: "Implemented Logistic Regression and K-Nearest Neighbors models to predict wine quality scores from chemical attributes.",
-    achievements: [
-      "Performed 10-fold cross-validation over range of 1 to 49 neighbors",
-      "Identified K=48 as optimal parameter",
-      "Showcased research-oriented approach to model selection and hyperparameter tuning"
-    ],
-    links: {
-      github: "https://github.com/shubham050802/data_science"
-    },
-    featured: false
-  },
-  {
-    id: 4,
-    title: "Prometeo'24 App",
-    category: "App Development",
-    technologies: ["Flutter", "Django", "REST APIs"],
-    description: "Assistant Head of App Development - Primary Utility & User Management System for college fest with 10k+ attendees.",
-    achievements: [
-      "Managed UI-UX, backend APIs, event management, and payment gateway",
-      "Served 10k+ attendees during the fest",
-      "Collaborated with team of 2 to deliver complete solution"
-    ],
-    links: {
-      playStore: "https://play.google.com/store/apps/details?id=com.promete24.iitj"
-    },
-    featured: true
-  },
-  {
-    id: 5,
     title: "Digital Clock",
+    image: "/projects/Initial_SetUp.jpeg",
     category: "Hardware",
     technologies: ["Vivado", "Verilog", "PYNQ-Z2", "RPI Addon"],
     description: "Head of Project - Designed multifunctional digital clock with four modes: clock, timer, stopwatch, and alarm.",
@@ -139,7 +76,7 @@ export const projects = [
     featured: true
   },
   {
-    id: 6,
+    id: 2,
     title: "Analog Signal Sampling Circuit Design",
     category: "Hardware",
     technologies: ["Virtuoso", "LTspice", "Op-amps", "Oscilloscope"],
@@ -155,21 +92,7 @@ export const projects = [
     featured: false
   },
   {
-    id: 7,
-    title: "Varchas'23 App",
-    category: "App Development",
-    technologies: ["Flutter", "Firebase"],
-    description: "Assistant Head of App Development - Flutter and Firebase-powered app for college sports fest.",
-    achievements: [
-      "Coordinated 10+ colleges managing 15+ sports events over 3 days",
-      "Real-time updates, leaderboards, event notifications, and Pronight entry",
-      "Integrated secure payment and event registration functionalities"
-    ],
-    links: {},
-    featured: false
-  },
-  {
-    id: 8,
+    id: 3,
     title: "Analog Circuit Design Lab",
     category: "Hardware",
     technologies: ["LTspice", "PSpice", "ALD1105", "2N7000 MOSFETs"],
@@ -183,7 +106,71 @@ export const projects = [
     featured: false
   },
   {
-    id: 9,
+    id: 4,
+    title: "Spam Email Classification using Naive Bayes",
+    category: "Machine Learning",
+    technologies: ["Python", "NumPy", "Pandas", "SciPy", "Scikit-learn"],
+    description: "Developed and evaluated probabilistic models for classifying emails as spam or not spam, leveraging scikit-learn.",
+    achievements: [
+      "Implemented both GaussianNB and BernoulliNB classifiers",
+      "Achieved test accuracy of 87.2% with GaussianNB and 94.8% with BernoulliNB on 1000 test emails",
+      "Demonstrated practical application of ML for core NLP task"
+    ],
+    links: {
+      github: "https://github.com/shubham050802/data_science"
+    },
+    featured: true
+  },
+  {
+    id: 5,
+    title: "Prometeo'24 App",
+    category: "App Development",
+    technologies: ["Flutter", "Django", "REST APIs"],
+    description: "Assistant Head of App Development - Primary Utility & User Management System for college fest with 10k+ attendees.",
+    achievements: [
+      "Managed UI-UX, backend APIs, event management, and payment gateway",
+      "Served 10k+ attendees during the fest",
+      "Collaborated with team of 2 to deliver complete solution"
+    ],
+    links: {
+      playStore: "https://play.google.com/store/apps/details?id=com.promete24.iitj"
+    },
+    featured: true
+  },
+  {
+    id: 6,
+    title: "Wine Cultivator Classification using Neural Networks",
+    category: "Machine Learning",
+    technologies: ["Python", "NumPy", "Pandas", "Scikit-learn"],
+    description: "Built and trained a Multi-layer Perceptron neural network to classify wine cultivators from physicochemical features.",
+    achievements: [
+      "Engineered complete ML pipeline with data splitting, feature scaling, model training, and evaluation",
+      "Achieved perfect 100% accuracy on unseen test set",
+      "Zero misclassifications validated with confusion matrix"
+    ],
+    links: {
+      github: "https://github.com/shubham050802/data_science"
+    },
+    featured: false
+  },
+  {
+    id: 7,
+    title: "Wine Quality Prediction",
+    category: "Machine Learning",
+    technologies: ["Python", "NumPy", "Pandas", "Matplotlib", "Scikit-learn"],
+    description: "Implemented Logistic Regression and K-Nearest Neighbors models to predict wine quality scores from chemical attributes.",
+    achievements: [
+      "Performed 10-fold cross-validation over range of 1 to 49 neighbors",
+      "Identified K=48 as optimal parameter",
+      "Showcased research-oriented approach to model selection and hyperparameter tuning"
+    ],
+    links: {
+      github: "https://github.com/shubham050802/data_science"
+    },
+    featured: false
+  },
+  {
+    id: 8,
     title: "Music Recommendation System",
     category: "Machine Learning",
     technologies: ["Python", "Scikit-learn", "Librosa", "Spotify API"],
@@ -196,6 +183,20 @@ export const projects = [
     links: {
       github: "https://github.com/rahulrangers/Music-Recommendation-System"
     },
+    featured: false
+  },
+  {
+    id: 9,
+    title: "Varchas'23 App",
+    category: "App Development",
+    technologies: ["Flutter", "Firebase"],
+    description: "Assistant Head of App Development - Flutter and Firebase-powered app for college sports fest.",
+    achievements: [
+      "Coordinated 10+ colleges managing 15+ sports events over 3 days",
+      "Real-time updates, leaderboards, event notifications, and Pronight entry",
+      "Integrated secure payment and event registration functionalities"
+    ],
+    links: {},
     featured: false
   },
   {
